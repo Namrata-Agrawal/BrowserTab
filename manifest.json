@@ -1,0 +1,20 @@
+{
+    "manifest_version":2,
+    "name":"Browsertab",
+    "version":"1.0",
+    "description":"Detect the elements of web page",
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "css":["popup.css"],
+            "js":["content.js"]
+        }
+    ],
+    "browser_action":{
+        
+        "default_icon":"user_image.png",
+        "default_popup":"popup.html"
+    },
+    "permissions":["activeTab"]
+}
+
